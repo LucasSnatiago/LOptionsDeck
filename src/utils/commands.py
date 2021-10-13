@@ -1,9 +1,9 @@
 from xml.etree import ElementTree
 
-path = "data/commands.xml"
+class CommandParser():
 
+    def __init__(self, path : str) -> None:
+        self.commands = ElementTree.parse(path)
 
-tree = ElementTree.parse(path)
-
-for option in tree.findall("option"):
-    print(option.get("name"), ": ", option.find("command").text)
+    def find_with_name(self, name: str):
+        return self.commands.find(f"option[name={name}]")
