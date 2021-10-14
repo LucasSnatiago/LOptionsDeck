@@ -1,4 +1,3 @@
-from typing import Any, Optional
 from xml.etree import ElementTree
 from dataclasses import dataclass
 
@@ -14,12 +13,14 @@ class OptionParser():
         self.commands = ElementTree.parse(path)
 
     def save(self, name:str,command: str, descrition: str):
-        new_option = ElementTree.SubElement(self.commands.getroot, "option", {"name": name})
+        root = self.commands.getroot()
+
+        new_option = ElementTree.SubElement(root, "option", {"name": name})
         com = ElementTree.SubElement(new_option, "command")
         com.text = command
         desc = ElementTree.SubElement(new_option, "description")
         desc.text = descrition
-        element = self.commands.getroot().append(new_option)
+        element = root.append(new_option)
 
     def find(self, name: str) -> OptionData:
         el = self.commands.find(f"option[name={name}]")

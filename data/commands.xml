@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<data>
+    <option name="Counter-Strike: Global Offensive">
+        <command>alias "+jumpthrow" "+jump;-attack"; alias "-jumpthrow" "-jump"; bind ()"+jumpthrow"</command>
+        <description>This is just a test</description>
+    </option>
+</data>
