@@ -4,4 +4,12 @@
         <command>alias "+jumpthrow" "+jump;-attack"; alias "-jumpthrow" "-jump"; bind ()"+jumpthrow"</command>
         <description>This is just a test</description>
     </option>
+    <option name="Counter-Strike: Global Offensive">
+        <command>mp_roundtime_defuse"+value"</command>
+        <description>The mp_roundtime_hostage command sets the time of rounds in hostage games</description>
+    </option>
+     <option name="Counter-Strike: Global Offensive">
+        <command>mp_roundtime_hostage"+value"</command>
+        <description>The The mp_roundtime command sets the time of rounds in all other games</description>
+    </option>
 </data>
