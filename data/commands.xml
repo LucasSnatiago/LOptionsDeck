@@ -11,5 +11,13 @@
      <option name="Counter-Strike: Global Offensive">
         <command>mp_roundtime_hostage"+value"</command>
         <description>The The mp_roundtime command sets the time of rounds in all other games</description>
+    </option>    
+    <option name="Steam">
+        <command>windowed-w"+value"</command>
+        <description>launch Steam games in windowed mode</description>
+    </option>    
+    <option name="Steam">
+        <command>-popupwindow</command>
+        <description>Running the game in Borderless Window Mode</description>
     </option>
 </data>
