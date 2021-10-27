@@ -10,6 +10,8 @@
         <img src="https://img.shields.io/static/v1?label=License&message=MIT&color=black&style=for-the-badge" /></a>
 </div>
 
+#
+
 This repository was created thinking about the releasing of the SteamDeck. As a user of Linux, I know how hard could be to someone to enjoy all features of the OS without knowing how to use the terminal. Going further, the LOptionsDeck can store commands for Steam, games and Linux itself.
 
 # Main goals
