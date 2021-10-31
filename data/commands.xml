@@ -24,4 +24,12 @@
         <command>-popupwindow</command>
         <description>Running the game in Borderless Window Mode</description>
     </option>
+    <option name="Steam">
+        <command>-novid</command>
+        <description>Disables Valve startup logo</description>
+    </option>
+    <option name="Wine-Steam">
+        <command>WINE_FULLSCREEN_FSR=1 %command%</command>
+        <description>Running the game with AMD's FidelityFX default on</description>
+    </option>
 </data>
