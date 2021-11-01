@@ -22,4 +22,17 @@ class proton():
         
         return True
 
+    # Download new release
+    def downloadNewRealease(self):
+        latest = self.latestRelease
+        url = latest["download"]
+        tempDir = "/tmp/proton/"
+        tempDir += url.split('/')[-1]
+        tempDir = os.path.expanduser(tempDir)
+        os.mkdir(tempDir)
 
+        if not protonup.api.download(url=url, destination=tempDir, show_progress=False):
+            return
+
+        tarfile.open(tempDir, "r:gz").extractall(self.installDir)
+        shutil.rmtree(tempDir)
